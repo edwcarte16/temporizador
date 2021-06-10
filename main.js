@@ -4,7 +4,7 @@ var fechaAhora=new Date();
 var diaMadres = [fechaAhora.getFullYear(), 06, 12, 'El Día de la madre'];
 var navidad = [fechaAhora.getFullYear(), 10, 13, 'Navidad'];
 var cumpleaños = [fechaAhora.getFullYear(), 08, 11, 'El Cumpleaños de X'];
-var cumpleaños2 = [fechaAhora.getFullYear(), 09, 14, 'El Cumpleaños de Y'];
+var cumpleaños2 = [fechaAhora.getFullYear(), 06, 09, 'El Cumpleaños de Y'];
 var cumpleaños3 = [fechaAhora.getFullYear(), 07, 14, 'El Cumpleaños de Z'];
 
 // Arreglos (arrays) -- En el arreglo "eventos" se debe escribir separado por comas, el nombre de cada evento que se agregue.
@@ -17,8 +17,8 @@ var mesActual=fechaAhora.getMonth()+1;
 var diaActual=fechaAhora.getDate();
 
 var nombreEvento;
-var minMes;
-var minDia;
+var minMes; //minMes hace referencia al mes más cercano 
+var minDia; //minDia hace referencia al día más cercano 
 
 for(let i=0,len=eventos.length;i<len;i++){
 
@@ -76,9 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const convertirAHoras = convertirAMinutos * 60;
   const convertirADias = convertirAHoras * 24
   
-  // Funciones
-  
-  //Método para la cuenta regresiva
+  //Función para la cuenta regresiva
   function cuentaRegresiva() {
     // Calcs
     const fechaAhora = new Date()
