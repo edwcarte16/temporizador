@@ -1,8 +1,8 @@
 var fechaAhora=new Date();
 
-const nombreEvento = "Navidad";
+const nombreEvento = "Nombre del evento";
 const mesEvento = 06;
-const diaEvento = 20;
+const diaEvento = 25;
 
 document.addEventListener('DOMContentLoaded', () => { 
 
